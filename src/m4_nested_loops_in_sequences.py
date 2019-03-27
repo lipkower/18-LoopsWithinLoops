@@ -158,7 +158,7 @@ def run_test_sum_numbers():
     # TO DO 3 (continued): Add your ADDITIONAL test(s) here:
     # Test 3
     expected = 77
-    actual = sum_numbers([30, 20, 10, 17])
+    actual = sum_numbers([(30, 20, 10, 17)])
     print('Expected and actual are:', expected, actual)
 
     # Test 4
@@ -182,14 +182,14 @@ def sum_numbers(seq_seq):
                     and each item in the subsequences is a number.
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # done: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
-    sum  = 0
+    sum = 0
     for k in range(len(seq_seq)):
         seq = seq_seq[k]
         for j in range(len(seq)):
-            sum = sum + seq[k]
+            sum = sum + seq[j]
     return sum
 
 def run_test_print_characters():
